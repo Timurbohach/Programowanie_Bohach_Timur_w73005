@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Programowanie Obiektowe</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 25px; 
+            background-color: #f9f9f9;
+        }
+        .zadanie-box { 
+            margin-bottom: 25px; 
+            padding: 20px; 
+            border: 2px dashed #999; 
+            border-radius: 8px; 
+            background-color: #fff;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab 7 - Obiekty w JS</h1>
+
+    <div class="zadanie-box">
+        <h2>Zadanie 7: Generator Użytkowników</h2>
+        <label for="input-count">Liczba rekordów do wygenerowania:</label>
+        <input type="number" id="input-count" value="5" min="1" max="20">
+        <button id="btn-generate">Wygeneruj listę</button>
+        
+        <div id="display-area" style="margin-top: 15px;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
