@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5 - Funkcje JS</title>
+    <style>
+        .aktywny-przycisk { background-color: lightgreen; }
+        .ukryty { display: none; }
+        section { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Programowanie Lab 5</h1>
+
+    <section>
+        <h2>Zadanie 4: Zmiana koloru przycisków</h2>
+        <button class="kolor-btn">Przycisk 1</button>
+        <button class="kolor-btn">Przycisk 2</button>
+        <button class="kolor-btn">Przycisk 3</button>
+    </section>
+
+    <section>
+        <h2>Zadanie 5: Ukrywanie elementu</h2>
+        <button id="toggle-btn">Pokaż/Ukryj element</button>
+        <p id="element-do-ukrycia">To jest element, który znika i się pojawia.</p>
+    </section>
+
+    <section>
+        <h2>Zadanie 6: Dodawanie do listy</h2>
+        <input type="text" id="wartosc-listy" placeholder="Wpisz coś...">
+        <button id="dodaj-do-listy-btn">Dodaj do listy</button>
+        <ul id="moja-lista"></ul>
+    </section>
+
+    <section>
+        <h2>Zadanie 7: Dodawanie do tabeli</h2>
+        <input type="text" id="imie" placeholder="Imię">
+        <input type="text" id="nazwisko" placeholder="Nazwisko">
+        <button id="dodaj-do-tabeli-btn">Dodaj do tabeli</button>
+        <table id="moja-tabela" border="1">
+            <tr><th>Imię</th><th>Nazwisko</th></tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Zadanie 8: Konwerter temperatur</h2>
+        <input type="number" id="temp-input" placeholder="Wartość">
+        <button id="na-fahrenheit">Na Fahrenheita</button>
+        <button id="na-celsjusz">Na Celsjusza</button>
+        <p>Wynik: <span id="temp-wynik">-</span></p>
+    </section>
+
+    <section>
+        <h2>Zadanie 9: Największy wspólny dzielnik (NWD)</h2>
+        <input type="number" id="liczba1" placeholder="Liczba 1">
+        <input type="number" id="liczba2" placeholder="Liczba 2">
+        <button id="oblicz-nwd">Oblicz NWD</button>
+        <p>Największy wspólny dzielnik: <span id="nwd-wynik">brak</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
