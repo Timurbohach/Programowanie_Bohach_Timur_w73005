@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-form-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px 40px;
+    border-radius: 10px;
+    border-top: 5px solid #28a745;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.input-row {
+    margin-bottom: 18px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+input:disabled, select:disabled {
+    background-color: #f8f9fa;
+    border-color: #e2e3e5;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+.opcja-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.opcja-checkbox input {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+}
+
+.opcja-checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button#btn-zapisz {
+    width: 100%;
+    padding: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button#btn-zapisz:hover {
+    background-color: #218838;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}
+
+.komunikat-bledu {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 15px;
+    font-weight: 500;
+}
+
+input:invalid:not(:placeholder-shown), 
+select:invalid {
+    border-color: #dc3545;
+}

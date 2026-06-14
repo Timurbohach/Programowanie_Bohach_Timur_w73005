@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 8 - Timur Bohach (73005)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-form-wrapper">
+        <h2>Rejestracja Użytkownika</h2>
+        
+        <form id="form-rejestracja" novalidate>
+            
+            <div class="input-row">
+                <label for="pole-imie">Imię:</label>
+                <input type="text" id="pole-imie" name="imie" required minlength="2">
+                <div class="komunikat-bledu" id="blad-pole-imie"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-nazwisko">Nazwisko:</label>
+                <input type="text" id="pole-nazwisko" name="nazwisko" required>
+                <div class="komunikat-bledu" id="blad-pole-nazwisko"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-email">Adres E-mail:</label>
+                <input type="email" id="pole-email" name="email" required>
+                <div class="komunikat-bledu" id="blad-pole-email"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-haslo">Hasło:</label>
+                <input type="password" id="pole-haslo" name="haslo" required minlength="8">
+                <div class="komunikat-bledu" id="blad-pole-haslo"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-haslo-powtorz">Potwierdź hasło:</label>
+                <input type="password" id="pole-haslo-powtorz" name="haslo2" required>
+                <div class="komunikat-bledu" id="blad-pole-haslo-powtorz"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-telefon">Numer telefonu:</label>
+                <input type="text" id="pole-telefon" name="telefon" required>
+                <div class="komunikat-bledu" id="blad-pole-telefon"></div>
+            </div>
+
+            <div class="input-row">
+                <label for="pole-data">Data Urodzenia:</label>
+                <input type="date" id="pole-data" name="dataUrodzenia" required>
+                <div class="komunikat-bledu" id="blad-pole-data"></div>
+            </div>
+
+            <div class="input-row">
+                <label>Płeć:</label>
+                <select id="pole-plec" name="plec" required>
+                    <option value="">Wybierz z listy...</option>
+                    <option value="M">Mężczyzna</option>
+                    <option value="K">Kobieta</option>
+                </select>
+                <div class="komunikat-bledu" id="blad-pole-plec"></div>
+            </div>
+
+            <hr class="separator">
+            
+            <div class="input-row">
+                <label for="wybor-kraju">Kraj pochodzenia:</label>
+                <select id="wybor-kraju" name="kraj" required>
+                    <option value="">Wybierz kraj...</option>
+                    <option value="PL">Polska</option>
+                    <option value="UK">Wielka Brytania</option>
+                    <option value="OTHER">Inny kraj</option>
+                </select>
+            </div>
+
+            <div class="input-row" id="sekcja-region">
+                <label for="pole-wojewodztwo">Województwo / Region:</label>
+                <div id="kontener-wojewodztwo">
+                    <input type="text" id="pole-wojewodztwo" name="wojewodztwo" disabled>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <label for="adres-zam">Adres zamieszkania:</label>
+                <input type="text" id="adres-zam" name="adresZamieszkania" disabled required>
+            </div>
+
+            <div class="input-row opcja-checkbox">
+                <input type="checkbox" id="check-adres" checked>
+                <label for="check-adres">Adres do korespondencji jest identyczny</label>
+            </div>
+
+            <div class="input-row" id="sekcja-adres-kor" style="display: none;">
+                <label for="adres-kor">Adres korespondencyjny:</label>
+                <input type="text" id="adres-kor" name="adresKorespondencyjny" disabled required>
+            </div>
+
+            <button type="submit" id="btn-zapisz">Zarejestruj się</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
